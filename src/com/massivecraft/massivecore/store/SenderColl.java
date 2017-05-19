@@ -194,5 +194,19 @@ public class SenderColl<E extends SenderEntity<E>> extends Coll<E> implements Se
 			senderColl.setSenderReference(senderId, sender);
 		}
 	}
+	
+	// -------------------------------------------- //
+	// ACTIVITY MILLIS
+	// -------------------------------------------- //
 
+	// Must be overriden if they want to use it.
+	public long getRemovePlayerMillisDefault()
+	{
+		return -1;
+	}
+	
+	public long getRemovePlayerPremiumBonus()
+	{
+		return -1;
+	}
 }
